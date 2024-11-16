@@ -505,7 +505,7 @@ const PropertyAddForm = () => {
 
             <div className="mb-4">
               <label htmlFor="images" className="block text-gray-700 font-bold mb-2">
-                Images (Select up to 4 images)
+                Images (Select up to 10 images)
               </label>
               <input
                 type="file"
