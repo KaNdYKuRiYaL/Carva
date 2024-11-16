@@ -47,7 +47,7 @@ const ProfilePage = async() => {
 
 
             <div className='md:w-3/4 md:pl-4'>
-              <h2 className='text-xl font-semibold mb-4'>Your Listings</h2>
+              <h2 className='text-xl font-semibold mb-4'>Your Cars</h2>
               <ProfileProperties properties={properties}/>
             </div>
           </div>

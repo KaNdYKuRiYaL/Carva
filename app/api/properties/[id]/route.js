@@ -33,7 +33,7 @@ export const DELETE =  async(request , {params})=>{
         await connectDB();
         const property = await Property.findById(propertyId);
         if(!property){
-            return new Response('Property Not Found',{status:404});
+            return new Response('No cars found',{status:404});
         }
         // verify the ownership
         if(property.owner.toString() !== userId){
@@ -78,6 +78,8 @@ export const PUT = async(request , {params})=>{
         const propertyData = {
             type: formData.get('type'),
             name: formData.get('name'),
+            model: formData.get('model'),
+            year: formData.get('year'),
             description : formData.get('description'),
             location : {
                 street : formData.get('location.street'),
@@ -85,9 +87,9 @@ export const PUT = async(request , {params})=>{
                 state : formData.get('location.state'),
                 zipcode : formData.get('location.zipcode'),
             },
-            beds : formData.get('beds'),
-            baths : formData.get('baths'),
-            square_feet : formData.get('square_feet'),
+            seating_capacity : formData.get('seating_capacity'),
+            fuel_type : formData.get('fuel_type'),
+            transmission : formData.get('transmission'),
             amenities,
             rates:{
                 weekly: formData.get('rates.weekly'),

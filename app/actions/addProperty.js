@@ -30,6 +30,8 @@ async function addProperty(formData){
         owner : userId,
         type: formData.get('type'),
         name: formData.get('name'),
+        model: formData.get('model'),
+        year: formData.get('year'),
         description: formData.get('description'),
         location : {
             street : formData.get('location.street'),
@@ -37,9 +39,9 @@ async function addProperty(formData){
             state : formData.get('location.state'),
             zipcode : formData.get('location.zipcode'),
         },
-        beds: formData.get('beds'),
-        baths: formData.get('baths'),
-        square_feet: formData.get('square_feet'),
+        seating_capacity: formData.get('seating_capacity'),
+        fuel_type: formData.get('fuel_type'),
+        transmission: formData.get('transmission'),
         amenities,
         rates:{
             weekly : formData.get('rates.weekly'),

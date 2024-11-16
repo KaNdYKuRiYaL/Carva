@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {FaBed , FaBath , FaRulerCombined , FaMoneyBill , FaMapMarker} from 'react-icons/fa'
+import {FaChair , FaGasPump , FaSteeringWheel , FaMoneyBill , FaMapMarker} from 'react-icons/fa'
 
 
 const PropertyCard = ({property}) => {
@@ -38,7 +38,7 @@ const PropertyCard = ({property}) => {
       <div className="p-4">
         <div className="text-left md:text-center lg:text-left mb-6">
           <div className="text-gray-600">{property.type}</div>
-          <h3 className="text-xl font-bold">{property.name}</h3>
+          <h3 className="text-xl font-bold">{property.name}{' '}{property.model}{' '}{property.year}</h3>
         </div>
         <h3 className="absolute top-[10px] right-[10px] bg-white px-4 py-2 rounded-lg text-blue-500 font-bold text-right md:text-center lg:text-right">
           ${getRateDisplay()}
@@ -46,16 +46,16 @@ const PropertyCard = ({property}) => {
 
         <div className="flex justify-center gap-4 text-gray-500 mb-4">
           <p>
-            <FaBed className="inline mr-1"/>{property.beds}{' '} 
-            <span className="md:hidden lg:inline">Beds</span>
+            <FaChair className="inline mr-1"/>{property.seating_capacity}{' '} 
+            <span className="md:hidden lg:inline">Seating Capacity</span>
           </p>
           <p>
-            <FaBath className="inline mr-1"/> {property.baths}{' '}
-            <span className="md:hidden lg:inline">Baths</span>
+            <FaGasPump className="inline mr-1"/> {property.fuel_type}{' '}
+            <span className="md:hidden lg:inline">Type</span>
           </p>
           <p>
-            <FaRulerCombined className="inline mr-1"/>{property.square_feet}{' '}
-            <span className="md:hidden lg:inline">sqft</span>
+            <FaSteeringWheel className="inline mr-1"/>{property.transmission}{' '}
+            <span className="md:hidden lg:inline">Transmission</span>
           </p>
         </div>
 

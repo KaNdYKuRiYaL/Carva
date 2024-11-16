@@ -33,7 +33,7 @@ async function deleteProperty(propertyId){
     // delete images from cloudinary
     if(publicIds.length>0 ){
         for(let publicId of publicIds){
-            await cloudinary.uploader.destroy('PropertyFinder/' + publicId);
+            await cloudinary.uploader.destroy('Carva/' + publicId);
         }
     }
 

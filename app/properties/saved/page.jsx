@@ -13,7 +13,7 @@ const SavedPropertiesPage = async() => {
             <div className="container lg:container mx-auto px-4 py-6">
                 <h1 className="text-2xl mb-4">Saved Properties</h1>
                 {bookmarks.length === 0?
-                (<p>No Saved Properties</p>):
+                (<p>No Cars Saved</p>):
                 (<div className="grid grid-col-1 md:grid-cols-3 gap-6">
                     {bookmarks.map((property)=>(
                         <PropertyCard key = {property._id} property = {property}/>

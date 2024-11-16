@@ -20,7 +20,7 @@ const PropertyPage = async({params}) => {
 
   if(!property){
     return (<h1 className="text-center text-2xl font-bold mt-10">
-      Property Not Found
+      No cars found
     </h1>);
   }
   
@@ -34,7 +34,7 @@ const PropertyPage = async({params}) => {
               href="/properties"
               className="text-blue-500 hover:text-blue-600 flex items-center"
             >
-              <FaArrowLeft className="mr-2"/> Back to Properties
+              <FaArrowLeft className="mr-2"/> Back to Cars
             </Link>
           </div>
       </section>

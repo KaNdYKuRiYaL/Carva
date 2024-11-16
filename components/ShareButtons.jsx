@@ -11,12 +11,12 @@ const ShareButtons = ({property}) => {
       </h3>
       <div className="flex gap-3 justify-center pb-5">
         <FacebookShareButton url = {shareUrl} quote={property.name}
-        hashtag={`#${property.type.replace(/\s/g,'')}ForRent`}>
+        hashtag={`#${property.type.replace(/\s/g,'')}ForRent/ForSell`}>
           <FacebookIcon size={40} round={true} />
         </FacebookShareButton>
 
         <TwitterShareButton url = {shareUrl} title={property.name}
-        hashtags={[`${property.type.replace(/\s/g,'')}ForRent`]}>
+        hashtags={[`${property.type.replace(/\s/g,'')}ForRent/ForSell`]}>
           <TwitterIcon size={40} round={true} />
         </TwitterShareButton>
 
@@ -26,7 +26,7 @@ const ShareButtons = ({property}) => {
         </WhatsappShareButton>
 
         <EmailShareButton url = {shareUrl} subject={property.name}
-        body={`check out this property listing : ${shareUrl}`}>
+        body={`check out this car : ${shareUrl}`}>
           <EmailIcon size={40} round={true} />
         </EmailShareButton>
 

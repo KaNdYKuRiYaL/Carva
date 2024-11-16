@@ -1,5 +1,5 @@
 
-import {FaBed , FaRulerCombined , FaBath, FaMapMarker , FaTimes, FaCheck } from 'react-icons/fa'
+import {FaChair , FaGasPump , FaSteeringWheel, FaMapMarker , FaTimes, FaCheck } from 'react-icons/fa'
 import PropertyMap from './PropertyMap'
 
 const PropertyDetails = ({property}) => {
@@ -8,7 +8,7 @@ const PropertyDetails = ({property}) => {
                   <div className="bg-white p-6 rounded-lg shadow-md text-center md:text-left">
                     <div className="text-gray-500 mb-4">{property.type}</div>
                     <h1 className="text-3xl font-bold mb-4">
-                      {property.name}
+                      {property.name}{' '}{property.model}{' '}{property.year}
                     </h1>
                     <div className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start">
                       <FaMapMarker className="fa-solid fa-location-dot text-lg text-orange-700 mr-2"></FaMapMarker>
@@ -57,16 +57,16 @@ const PropertyDetails = ({property}) => {
                     </h3>
                     <div className="flex justify-center gap-4 text-blue-500 mb-4 text-xl space-x-9">
                       <p>
-                        <FaBed className="inline-block mr-1"></FaBed> {property.beds}{' '}
-                        <span className="hidden sm:inline">Beds</span>
+                        <FaChair className="inline-block mr-1"></FaChair> {property.seating_capacity}{' '}
+                        <span className="hidden sm:inline">Seating Capacity</span>
                       </p>
                       <p>
-                        <FaBath className="inline-block mr-1"></FaBath> {property.baths}{' '}
-                        <span className="hidden sm:inline">Baths</span>
+                        <FaGasPump className="inline-block mr-1"></FaGasPump> {property.fuel_type}{' '}
+                        <span className="hidden sm:inline">Fuel Type</span>
                       </p>
                       <p>
-                        <FaRulerCombined className="inline-block mr-1"></FaRulerCombined>
-                        {property.square_feet}{' '} <span className="hidden sm:inline">sqft</span>
+                        <FaSteeringWheel className="inline-block mr-1"></FaSteeringWheel>
+                        {property.transmission}{' '} <span className="hidden sm:inline">transmission</span>
                       </p>
                     </div>
                     <p className="text-gray-500 mb-4 text-center">

@@ -38,7 +38,7 @@ const PropertySearchForm = () => {
           </div>
           <div className="w-full md:w-2/5 md:pl-2">
             <label htmlFor="property-type" className="sr-only">
-              Property Type
+              Car Type
             </label>
             <select
               id="property-type"
@@ -47,13 +47,12 @@ const PropertySearchForm = () => {
               onChange={(e)=>setPropertyType(e.target.value)}
             >
               <option value="All">All</option>
-              <option value="Apartment">Apartment</option>
-              <option value="Studio">Studio</option>
-              <option value="Condo">Condo</option>
-              <option value="House">House</option>
-              <option value="Cabin Or Cottage">Cabin or Cottage</option>
-              <option value="Loft">Loft</option>
-              <option value="Room">Room</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Sports Car">Sports Car</option>
+              <option value="Hatchback">Hatchback</option>
+              <option value="SUV">SUV</option>
+              <option value="Pickup Truck">Pickup Truck</option>
+              <option value="Coupe">Coupe</option>
               <option value="Other">Other</option>
             </select>
           </div>

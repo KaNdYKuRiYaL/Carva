@@ -72,7 +72,7 @@ export const POST = async(request)=>{
             // make request to upload 
             const result = await cloudinary.uploader.upload(
                 `data:image/png;base64,${imageBase64}`, {
-                    folder: 'PropertyFinder'
+                    folder: 'Carva'
                 }
             );
 

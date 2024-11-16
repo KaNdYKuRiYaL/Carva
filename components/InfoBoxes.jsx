@@ -11,22 +11,22 @@ const InfoBoxes = () => {
                 heading='For Renters'
                 backgroundColor = 'bg-gray-200'
                 buttonInfo={{
-                    text: 'Browse Properties',
+                    text: 'Browse Cars',
                     link : '/properties',
                     backgroundColor:'bg-black'
             }}>
-                Find your dream rental property. Bookmark properties and contact owners.
+                Find your dream car. Bookmark cars and contact owners.
             </InfoBox>
 
             <InfoBox 
-                heading='For Properties Owners'
+                heading='For Car Owners'
                 backgroundColor = 'bg-blue-400'
                 buttonInfo={{
-                    text: 'Add Properties',
+                    text: 'Add Cars',
                     link : '/properties/add',
                     backgroundColor:'bg-blue-500'
             }}>
-                List your properties and reach potential tenants. Rent as an Airbnb or long term.
+                List your cars and reach potential buyers. Rent for a day-trip or long term.
             </InfoBox>
             
         </div>

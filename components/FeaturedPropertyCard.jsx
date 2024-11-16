@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import {FaBed , FaBath , FaRulerCombined , FaMoneyBill  , FaMapMarker} from 'react-icons/fa';
+import {FaMoneyBill  , FaMapMarker , FaChair , FaGasPump , FaSteeringWheel } from 'react-icons/fa';
 
 
 
@@ -32,8 +32,8 @@ const FeaturedPropertyCard = ({property}) => {
             className="object-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl w-full md:w-2/5"
         />
         <div className="p-6">
-            <h3 className="text-xl font-bold">{property.name}</h3>
-            <div className="text-gray-600 mb-4">{property.type}</div>
+            <h3 className="text-xl font-bold">{property.name}{' '}{property.model}</h3>
+            <div className="text-gray-600 mb-4">{property.year}, {property.type}</div>
         <h3
         className="absolute top-[10px] left-[10px] bg-white px-4 py-2 rounded-lg text-blue-500 font-bold text-right md:text-center lg:text-right"
         >
@@ -41,17 +41,17 @@ const FeaturedPropertyCard = ({property}) => {
         </h3>
         <div className="flex justify-center gap-4 text-gray-500 mb-4">
             <p>
-                <FaBed className='inline-block mr-2'/> {property.beds}{' '}
-                <span className="md:hidden lg:inline">Beds</span>
+                <FaChair className='inline-block mr-2'/> {property.seating_capacity}{' '}
+                <span className="md:hidden lg:inline">Seating Capacity</span>
             </p>
             <p>
-                <FaBath className='inline-block mr-2'/> {property.baths}
+                <FaGasPump className='inline-block mr-2'/> {property.fuel_type}
                 {' '}
-                <span className="md:hidden lg:inline">Baths</span>
+                <span className="md:hidden lg:inline">Type</span>
             </p>
             <p>
-                <FaRulerCombined className='inline-block mr-2'/>
-                 {property.square_feet}{' '} <span className="md:hidden lg:inline">sqft</span>
+                <FaSteeringWheel className='inline-block mr-2'/>
+                 {property.transmission}{' '} <span className="md:hidden lg:inline">transmission</span>
             </p>
         </div>
 
