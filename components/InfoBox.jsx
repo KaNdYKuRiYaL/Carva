@@ -17,7 +17,7 @@ const InfoBox = ({
           href={`${buttonInfo.link}`}
           className={`inline-block ${buttonInfo.backgroundColor} text-white rounded-lg px-4 py-2 hover:opacity-80`}
         >
-          Browse Properties
+          Browse Cars
         </a>
     </div>
   )

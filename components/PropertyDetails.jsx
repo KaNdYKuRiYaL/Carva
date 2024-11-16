@@ -1,5 +1,6 @@
 
-import {FaChair , FaGasPump , FaSteeringWheel, FaMapMarker , FaTimes, FaCheck } from 'react-icons/fa'
+import {FaChair , FaGasPump, FaMapMarker , FaTimes, FaCheck } from 'react-icons/fa';
+import { PiSteeringWheelBold } from "react-icons/pi";
 import PropertyMap from './PropertyMap'
 
 const PropertyDetails = ({property}) => {
@@ -65,7 +66,7 @@ const PropertyDetails = ({property}) => {
                         <span className="hidden sm:inline">Fuel Type</span>
                       </p>
                       <p>
-                        <FaSteeringWheel className="inline-block mr-1"></FaSteeringWheel>
+                        <PiSteeringWheelBold className="inline-block mr-1"></PiSteeringWheelBold>
                         {property.transmission}{' '} <span className="hidden sm:inline">transmission</span>
                       </p>
                     </div>

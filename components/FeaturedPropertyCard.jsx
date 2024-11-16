@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import {FaMoneyBill  , FaMapMarker , FaChair , FaGasPump , FaSteeringWheel } from 'react-icons/fa';
-
+import {FaMoneyBill  , FaMapMarker , FaChair , FaGasPump } from 'react-icons/fa';
+import { PiSteeringWheelBold } from "react-icons/pi";
 
 
 const FeaturedPropertyCard = ({property}) => {
@@ -50,7 +50,7 @@ const FeaturedPropertyCard = ({property}) => {
                 <span className="md:hidden lg:inline">Type</span>
             </p>
             <p>
-                <FaSteeringWheel className='inline-block mr-2'/>
+                <PiSteeringWheelBold className='inline-block mr-2'/>
                  {property.transmission}{' '} <span className="md:hidden lg:inline">transmission</span>
             </p>
         </div>

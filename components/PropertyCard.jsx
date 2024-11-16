@@ -1,8 +1,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {FaChair , FaGasPump , FaSteeringWheel , FaMoneyBill , FaMapMarker} from 'react-icons/fa'
-
+import {FaChair , FaGasPump , FaMoneyBill , FaMapMarker} from 'react-icons/fa'
+import { PiSteeringWheelBold } from "react-icons/pi";
 
 const PropertyCard = ({property}) => {
     const getRateDisplay = ()=>{
@@ -54,7 +54,7 @@ const PropertyCard = ({property}) => {
             <span className="md:hidden lg:inline">Type</span>
           </p>
           <p>
-            <FaSteeringWheel className="inline mr-1"/>{property.transmission}{' '}
+            <PiSteeringWheelBold className="inline mr-1"/>{property.transmission}{' '}
             <span className="md:hidden lg:inline">Transmission</span>
           </p>
         </div>

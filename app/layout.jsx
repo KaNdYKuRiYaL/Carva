@@ -9,9 +9,9 @@ import { GlobalProvider } from '@/context/GlobalContext';
 import 'photoswipe/dist/photoswipe.css'
 
 export const metadata = {
-  title: 'PropertyPulse | Find the Perfect Rental',
-  description : 'Find your dream rental property',
-  keywords : 'rental , find rentls , find properties',
+  title: 'Carva | Find the Perfect Car',
+  description : 'Find your dream car',
+  keywords : 'rental , find cars , find rentals',
 };
 
 
