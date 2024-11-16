@@ -11,7 +11,7 @@ const Hero = () => {
             Find The Perfect Car
           </h1>
           <p className="my-4 text-xl text-white">
-            Discover the perfect car that suits your needs.
+            Discover the car that suits your needs.
           </p>
         </div>
         <PropertySearchForm/>

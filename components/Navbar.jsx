@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/assets/images/logo-white.png";
+import logo from "@/assets/images/logo2.png";
 import profileDefault from "@/assets/images/profile.png";
 import { FaGoogle } from "react-icons/fa";
 import { signIn , signOut , useSession, getProviders } from "next-auth/react";
@@ -68,7 +68,7 @@ const Navbar = () => {
             <Link className="flex flex-shrink-0 items-center" href="/">
               <Image className="h-10 w-auto" src={logo} alt="Carva" />
 
-              <span className="hidden md:block text-white text-2xl font-bold ml-2">
+              <span className="hidden md:block text-white text-3xl font-bold ml-2">
                 Carva
               </span>
             </Link>
